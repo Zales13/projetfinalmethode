@@ -1,0 +1,50 @@
+@import "~bootstrap/scss/bootstrap";
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .calculate {
+    text-align: center;
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .keyboard {
+      > div {
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 10px 0;
+
+        &.offset-9 {
+          margin-left: 75%;
+        }
+        > div {
+          border: 1px solid #d3d3d3;
+          padding: 20px;
+          border-radius: 7px;
+        }
+      }
+    }
+  }
+  .result {
+    border: 1px solid #d3d3d3;
+    padding: 20px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+  }
+  .touch {
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
